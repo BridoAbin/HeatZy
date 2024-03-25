@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="../img/applogo.png" type="image/png">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../system.css">
+    <title>HeatZy</title>
+
+    
+</head>
+<body>
+<!-- HEADER -->
+<header class="header" id="header">
+    <nav class="nav container">
+
+      <a href="home.html" class="nav_img">
+        <img src="../img/applogo.png" alt="">
+      </a>
+      
+      <a href="home.html" class="nav__logo"> HeatZy </a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="home.html" class="nav__link active-link">Home</a>
+          </li>
+          <a href="login.html" class="button button--ghost">Login</a>
+        </ul>
+        <div class="nav__close" id="nav-close">
+          <i class='bx bx-x'></i>
+        </div>
+        <img src="nav-img.png" alt="" class="nav__img">
+      </div>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class='bx bx-grid-alt'></i>
+      </div>
+    </nav>
+  </header>
+
+<!-- Login form -->
+<div class="ring">
+  <i style="--clr:#00ff0a;"></i>
+  <i style="--clr:#ff0057;"></i>
+  <i style="--clr:#fffd44;"></i>
+  <div class="login">
+    <h2>Login</h2>
+    <form onsubmit="return validateForm()">
+      <div class="inputBx">
+        <input type="email" id="email" placeholder="Email">
+        <span id="emailError" style="color: red;"></span>
+      </div><br>
+      <div class="inputBx">
+        <input type="password" placeholder="Password">
+      </div><br>
+      <div class="inputBx">
+        <input type="submit" value="Sign in">
+      </div><br>
+      <div class="links">
+        <a href="#">Forget Password</a>
+        <a href="signup.html">Signup</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+</body>
+
+</html>
